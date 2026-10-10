@@ -20,6 +20,14 @@
     "label": "Deutsch"
   },
   {
+    "code": "cs",
+    "label": "Čeština"
+  },
+  {
+    "code": "mn",
+    "label": "Монгол"
+  },
+  {
     "code": "el",
     "label": "Ελληνικά"
   },
@@ -30,6 +38,10 @@
   {
     "code": "pt",
     "label": "Português"
+  },
+  {
+    "code": "pt-BR",
+    "label": "Português (Brasil)"
   },
   {
     "code": "nl",

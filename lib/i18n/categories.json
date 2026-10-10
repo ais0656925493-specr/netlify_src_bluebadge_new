@@ -43,7 +43,7 @@
     "personal": "Pessoal",
     "business": "Empresa",
     "creator": "Criador / Figura pública",
-    "media": "Mídia / Notícias",
+    "media": "Meios de comunicação / Notícias",
     "brand": "Marca / Organização",
     "community": "Comunidade"
   },
@@ -206,5 +206,29 @@
     "media": "Μέσα / Ειδήσεις",
     "brand": "Μάρκα / Οργανισμός",
     "community": "Κοινότητα"
+  },
+  "cs": {
+    "personal": "Osobní",
+    "business": "Firma",
+    "creator": "Tvůrce / Veřejně známá osoba",
+    "media": "Média / Zprávy",
+    "brand": "Značka / Organizace",
+    "community": "Komunita"
+  },
+  "mn": {
+    "personal": "Хувийн",
+    "business": "Бизнес",
+    "creator": "Бүтээгч / Олон нийтийн хүн",
+    "media": "Хэвлэл мэдээлэл / Мэдээ",
+    "brand": "Брэнд / Байгууллага",
+    "community": "Нийгэмлэг"
+  },
+  "pt-BR": {
+    "personal": "Pessoal",
+    "business": "Empresa",
+    "creator": "Criador / Figura pública",
+    "media": "Mídia / Notícias",
+    "brand": "Marca / Organização",
+    "community": "Comunidade"
   }
 }

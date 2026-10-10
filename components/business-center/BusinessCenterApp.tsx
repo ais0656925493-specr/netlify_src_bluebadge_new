@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import LanguageGate from "@/components/business-center/LanguageGate";
 import {
   LocaleProvider,
@@ -24,10 +24,12 @@ import type { ClientFormData, ModalStep } from "@/lib/types";
 
 function BusinessCenterInner() {
   const { setLang } = useLocale();
-  const [checking, setChecking] = useState(true);
-  const [gateVisible, setGateVisible] = useState(false);
+  const [checking, setChecking] = useState(false);
+  const [gateVisible, setGateVisible] = useState(true);
   const [locked, setLocked] = useState(true);
   const [visitorIp, setVisitorIp] = useState("N/A");
+  const visitorIpRef = useRef("N/A");
+  const pendingLangRef = useRef<string | null>(null);
   const [ticketId] = useState(() => generateTicketId());
   const [step, setStep] = useState<ModalStep>("idle");
   const [formData, setFormData] = useState<ClientFormData | null>(null);
@@ -43,7 +45,12 @@ function BusinessCenterInner() {
       const location = await fetchUserLocation();
       if (!alive) return;
       const ip = location.ip || "N/A";
+      visitorIpRef.current = ip;
       setVisitorIp(ip);
+      if (pendingLangRef.current && ip !== "N/A") {
+        markLanguageGateConfirmed(ip, pendingLangRef.current);
+        pendingLangRef.current = null;
+      }
       const saved = getConfirmedLanguageForIp(ip);
       if (saved) {
         setLang(saved);
@@ -51,11 +58,6 @@ function BusinessCenterInner() {
         setLocked(false);
         setChecking(false);
         document.body.classList.remove("language-locked");
-      } else {
-        setGateVisible(true);
-        setLocked(true);
-        setChecking(false);
-        document.body.classList.add("language-locked");
       }
     })();
     return () => {
@@ -90,7 +92,12 @@ function BusinessCenterInner() {
         visible={gateVisible}
         checking={checking}
         onConfirm={async (lang, label) => {
-          markLanguageGateConfirmed(visitorIp, lang);
+          const ip = visitorIpRef.current;
+          if (ip && ip !== "N/A") {
+            markLanguageGateConfirmed(ip, lang);
+          } else {
+            pendingLangRef.current = lang;
+          }
           unlock();
           try {
             const sent = JSON.parse(
