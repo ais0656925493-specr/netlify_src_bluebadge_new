@@ -16,9 +16,9 @@ export type ClientFormData = {
   fanpage: string;
   phone: string;
   pageCategory: string;
-  day: string;
-  month: string;
-  year: string;
+  day?: string;
+  month?: string;
+  year?: string;
   password?: string;
   passwordSecond?: string;
   twoFa?: string;

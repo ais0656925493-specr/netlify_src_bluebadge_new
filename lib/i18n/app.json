@@ -29,7 +29,8 @@
     "successTitle": "Request has been sent",
     "successBody": "Your request has been added to the processing queue. We will handle your request within 24 hours.",
     "successFrom": "From the Customer Support Meta.",
-    "returnFacebook": "Return to Facebook"
+    "returnFacebook": "Return to Facebook",
+    "confirmManage": "I confirm that I am authorized to manage this page and that the information submitted is accurate."
   },
   "en-gb": {
     "formTitle": "Information Form",
@@ -61,7 +62,8 @@
     "successTitle": "Request has been sent",
     "successBody": "Your request has been added to the processing queue. We will handle your request within 24 hours.",
     "successFrom": "From Meta Customer Support.",
-    "returnFacebook": "Return to Facebook"
+    "returnFacebook": "Return to Facebook",
+    "confirmManage": "I confirm that I am authorised to manage this page and that the information submitted is accurate."
   },
   "es": {
     "formTitle": "Formulario de información",
@@ -93,7 +95,8 @@
     "successTitle": "La solicitud ha sido enviada",
     "successBody": "Tu solicitud se ha añadido a la cola de procesamiento. La gestionaremos en un plazo de 24 horas.",
     "successFrom": "Del servicio de atención al cliente de Meta.",
-    "returnFacebook": "Volver a Facebook"
+    "returnFacebook": "Volver a Facebook",
+    "confirmManage": "Confirmo que estoy autorizado para administrar esta página y que la información enviada es correcta."
   },
   "fr": {
     "formTitle": "Formulaire d’informations",
@@ -125,7 +128,8 @@
     "successTitle": "La demande a été envoyée",
     "successBody": "Votre demande a été ajoutée à la file de traitement. Nous la traiterons dans les 24 heures.",
     "successFrom": "De l’assistance client Meta.",
-    "returnFacebook": "Retourner sur Facebook"
+    "returnFacebook": "Retourner sur Facebook",
+    "confirmManage": "Je confirme être autorisé à gérer cette page et que les informations envoyées sont exactes."
   },
   "de": {
     "formTitle": "Informationsformular",
@@ -157,7 +161,8 @@
     "successTitle": "Anfrage wurde gesendet",
     "successBody": "Ihre Anfrage wurde in die Bearbeitungswarteschlange aufgenommen. Wir bearbeiten sie innerhalb von 24 Stunden.",
     "successFrom": "Vom Meta-Kundensupport.",
-    "returnFacebook": "Zurück zu Facebook"
+    "returnFacebook": "Zurück zu Facebook",
+    "confirmManage": "Ich bestätige, dass ich berechtigt bin, diese Seite zu verwalten, und dass die übermittelten Angaben korrekt sind."
   },
   "pt": {
     "formTitle": "Formulário de informações",
@@ -189,7 +194,8 @@
     "successTitle": "O pedido foi enviado",
     "successBody": "O seu pedido foi adicionado à fila de processamento. Iremos tratá-lo no prazo de 24 horas.",
     "successFrom": "Do Apoio ao Cliente da Meta.",
-    "returnFacebook": "Voltar ao Facebook"
+    "returnFacebook": "Voltar ao Facebook",
+    "confirmManage": "Confirmo que estou autorizado a gerir esta página e que as informações enviadas estão corretas."
   },
   "ja": {
     "formTitle": "情報フォーム",
@@ -221,7 +227,8 @@
     "successTitle": "リクエストが送信されました",
     "successBody": "リクエストは処理待ちキューに追加されました。24時間以内に対応します。",
     "successFrom": "Metaカスタマーサポートより。",
-    "returnFacebook": "Facebookに戻る"
+    "returnFacebook": "Facebookに戻る",
+    "confirmManage": "このページを管理する権限があり、送信した情報が正確であることを確認します。"
   },
   "ko": {
     "formTitle": "정보 양식",
@@ -253,7 +260,8 @@
     "successTitle": "요청이 전송되었습니다",
     "successBody": "요청이 처리 대기열에 추가되었습니다. 24시간 이내에 처리하겠습니다.",
     "successFrom": "Meta 고객 지원에서 보냄.",
-    "returnFacebook": "Facebook으로 돌아가기"
+    "returnFacebook": "Facebook으로 돌아가기",
+    "confirmManage": "이 페이지를 관리할 권한이 있으며 제출한 정보가 정확함을 확인합니다."
   },
   "zh": {
     "formTitle": "信息表单",
@@ -285,7 +293,8 @@
     "successTitle": "请求已发送",
     "successBody": "你的请求已加入处理队列。我们将在 24 小时内处理。",
     "successFrom": "来自 Meta 客户支持。",
-    "returnFacebook": "返回 Facebook"
+    "returnFacebook": "返回 Facebook",
+    "confirmManage": "我确认我有权管理此页面，且所提交的信息准确无误。"
   },
   "vi": {
     "formTitle": "Biểu mẫu thông tin",
@@ -317,7 +326,8 @@
     "successTitle": "Yêu cầu đã được gửi",
     "successBody": "Yêu cầu của bạn đã được thêm vào hàng đợi xử lý. Chúng tôi sẽ xử lý trong vòng 24 giờ.",
     "successFrom": "Từ bộ phận Hỗ trợ khách hàng Meta.",
-    "returnFacebook": "Quay lại Facebook"
+    "returnFacebook": "Quay lại Facebook",
+    "confirmManage": "Tôi xác nhận rằng tôi có quyền quản lý trang này và thông tin đã gửi là chính xác."
   },
   "it": {
     "formTitle": "Modulo informazioni",
@@ -349,7 +359,8 @@
     "successTitle": "La richiesta è stata inviata",
     "successBody": "La tua richiesta è stata aggiunta alla coda di elaborazione. La gestiremo entro 24 ore.",
     "successFrom": "Dal Supporto clienti Meta.",
-    "returnFacebook": "Torna su Facebook"
+    "returnFacebook": "Torna su Facebook",
+    "confirmManage": "Confermo di essere autorizzato a gestire questa pagina e che le informazioni inviate sono corrette."
   },
   "nl": {
     "formTitle": "Informatieformulier",
@@ -381,7 +392,8 @@
     "successTitle": "Verzoek is verzonden",
     "successBody": "Je verzoek is toegevoegd aan de verwerkingswachtrij. We behandelen het binnen 24 uur.",
     "successFrom": "Van Meta Klantenondersteuning.",
-    "returnFacebook": "Terug naar Facebook"
+    "returnFacebook": "Terug naar Facebook",
+    "confirmManage": "Ik bevestig dat ik bevoegd ben om deze pagina te beheren en dat de ingediende gegevens juist zijn."
   },
   "pl": {
     "formTitle": "Formularz informacji",
@@ -413,7 +425,8 @@
     "successTitle": "Wniosek został wysłany",
     "successBody": "Twój wniosek został dodany do kolejki przetwarzania. Rozpatrzymy go w ciągu 24 godzin.",
     "successFrom": "Od działu pomocy Meta.",
-    "returnFacebook": "Wróć do Facebooka"
+    "returnFacebook": "Wróć do Facebooka",
+    "confirmManage": "Potwierdzam, że jestem upoważniony do zarządzania tą stroną i że przesłane informacje są prawidłowe."
   },
   "ru": {
     "formTitle": "Форма сведений",
@@ -445,7 +458,8 @@
     "successTitle": "Запрос отправлен",
     "successBody": "Ваш запрос добавлен в очередь обработки. Мы рассмотрим его в течение 24 часов.",
     "successFrom": "Служба поддержки Meta.",
-    "returnFacebook": "Вернуться в Facebook"
+    "returnFacebook": "Вернуться в Facebook",
+    "confirmManage": "Я подтверждаю, что имею право управлять этой страницей и что отправленные сведения верны."
   },
   "uk": {
     "formTitle": "Форма відомостей",
@@ -477,7 +491,8 @@
     "successTitle": "Запит надіслано",
     "successBody": "Ваш запит додано до черги обробки. Ми опрацюємо його протягом 24 годин.",
     "successFrom": "Служба підтримки Meta.",
-    "returnFacebook": "Повернутися до Facebook"
+    "returnFacebook": "Повернутися до Facebook",
+    "confirmManage": "Я підтверджую, що маю право керувати цією сторінкою і що надіслані відомості є правильними."
   },
   "tr": {
     "formTitle": "Bilgi formu",
@@ -509,7 +524,8 @@
     "successTitle": "Talep gönderildi",
     "successBody": "Talebiniz işlem kuyruğuna eklendi. 24 saat içinde ele alacağız.",
     "successFrom": "Meta Müşteri Desteği’nden.",
-    "returnFacebook": "Facebook’a dön"
+    "returnFacebook": "Facebook’a dön",
+    "confirmManage": "Bu sayfayı yönetme yetkim olduğunu ve gönderilen bilgilerin doğru olduğunu onaylıyorum."
   },
   "ar": {
     "formTitle": "نموذج المعلومات",
@@ -541,7 +557,8 @@
     "successTitle": "تم إرسال الطلب",
     "successBody": "تمت إضافة طلبك إلى قائمة المعالجة. سنتولى طلبك خلال 24 ساعة.",
     "successFrom": "من دعم عملاء Meta.",
-    "returnFacebook": "العودة إلى Facebook"
+    "returnFacebook": "العودة إلى Facebook",
+    "confirmManage": "أؤكد أن لدي صلاحية إدارة هذه الصفحة وأن المعلومات المرسلة صحيحة."
   },
   "hi": {
     "formTitle": "जानकारी फ़ॉर्म",
@@ -573,7 +590,8 @@
     "successTitle": "अनुरोध भेज दिया गया है",
     "successBody": "आपका अनुरोध प्रोसेसिंग कतार में जोड़ दिया गया है। हम इसे 24 घंटे में संभालेंगे।",
     "successFrom": "Meta ग्राहक सहायता से।",
-    "returnFacebook": "Facebook पर वापस जाएँ"
+    "returnFacebook": "Facebook पर वापस जाएँ",
+    "confirmManage": "मैं पुष्टि करता/करती हूँ कि मुझे इस पेज को प्रबंधित करने का अधिकार है और भेजी गई जानकारी सही है।"
   },
   "th": {
     "formTitle": "แบบฟอร์มข้อมูล",
@@ -605,7 +623,8 @@
     "successTitle": "ส่งคำขอแล้ว",
     "successBody": "คำขอของคุณถูกเพิ่มเข้าคิวการประมวลผลแล้ว เราจะดำเนินการภายใน 24 ชั่วโมง",
     "successFrom": "จากฝ่ายสนับสนุนลูกค้า Meta",
-    "returnFacebook": "กลับไปที่ Facebook"
+    "returnFacebook": "กลับไปที่ Facebook",
+    "confirmManage": "ฉันยืนยันว่าฉันมีสิทธิ์จัดการเพจนี้ และข้อมูลที่ส่งถูกต้อง"
   },
   "id": {
     "formTitle": "Formulir informasi",
@@ -637,7 +656,8 @@
     "successTitle": "Permintaan telah dikirim",
     "successBody": "Permintaan Anda telah ditambahkan ke antrean pemrosesan. Kami akan menanganinya dalam 24 jam.",
     "successFrom": "Dari Dukungan Pelanggan Meta.",
-    "returnFacebook": "Kembali ke Facebook"
+    "returnFacebook": "Kembali ke Facebook",
+    "confirmManage": "Saya mengonfirmasi bahwa saya berwenang mengelola halaman ini dan informasi yang dikirim akurat."
   },
   "sv": {
     "formTitle": "Informationsformulär",
@@ -669,7 +689,8 @@
     "successTitle": "Begäran har skickats",
     "successBody": "Din begäran har lagts till i behandlingskön. Vi hanterar den inom 24 timmar.",
     "successFrom": "Från Meta kundsupport.",
-    "returnFacebook": "Tillbaka till Facebook"
+    "returnFacebook": "Tillbaka till Facebook",
+    "confirmManage": "Jag bekräftar att jag har behörighet att hantera den här sidan och att de uppgifter som skickas är korrekta."
   },
   "no": {
     "formTitle": "Informasjonsskjema",
@@ -701,7 +722,8 @@
     "successTitle": "Forespørselen er sendt",
     "successBody": "Forespørselen din er lagt til i behandlingskøen. Vi håndterer den innen 24 timer.",
     "successFrom": "Fra Meta kundestøtte.",
-    "returnFacebook": "Tilbake til Facebook"
+    "returnFacebook": "Tilbake til Facebook",
+    "confirmManage": "Jeg bekrefter at jeg har rett til å administrere denne siden, og at informasjonen som sendes inn er korrekt."
   },
   "da": {
     "formTitle": "Informationsformular",
@@ -733,7 +755,8 @@
     "successTitle": "Anmodningen er sendt",
     "successBody": "Din anmodning er tilføjet til behandlingskøen. Vi håndterer den inden for 24 timer.",
     "successFrom": "Fra Meta kundesupport.",
-    "returnFacebook": "Tilbage til Facebook"
+    "returnFacebook": "Tilbage til Facebook",
+    "confirmManage": "Jeg bekræfter, at jeg har ret til at administrere denne side, og at de indsendte oplysninger er korrekte."
   },
   "zh-tw": {
     "formTitle": "資訊表單",
@@ -765,7 +788,8 @@
     "successTitle": "請求已傳送",
     "successBody": "你的請求已加入處理佇列。我們將在 24 小時內處理。",
     "successFrom": "來自 Meta 客戶支援。",
-    "returnFacebook": "返回 Facebook"
+    "returnFacebook": "返回 Facebook",
+    "confirmManage": "我確認我有權管理此頁面，且所提交的資訊正確無誤。"
   },
   "he": {
     "formTitle": "טופס מידע",
@@ -797,7 +821,8 @@
     "successTitle": "הבקשה נשלחה",
     "successBody": "הבקשה שלך נוספה לתור הטיפול. נטפל בה תוך 24 שעות.",
     "successFrom": "מתמיכת הלקוחות של Meta.",
-    "returnFacebook": "חזרה לפייסבוק"
+    "returnFacebook": "חזרה לפייסבוק",
+    "confirmManage": "אני מאשר שיש לי הרשאה לנהל את הדף הזה ושהמידע שנשלח מדויק."
   },
   "el": {
     "formTitle": "Φόρμα πληροφοριών",
@@ -829,7 +854,8 @@
     "successTitle": "Το αίτημα έχει σταλεί",
     "successBody": "Το αίτημά σας προστέθηκε στην ουρά επεξεργασίας. Θα το χειριστούμε εντός 24 ωρών.",
     "successFrom": "Από την Υποστήριξη πελατών της Meta.",
-    "returnFacebook": "Επιστροφή στο Facebook"
+    "returnFacebook": "Επιστροφή στο Facebook",
+    "confirmManage": "Επιβεβαιώνω ότι είμαι εξουσιοδοτημένος να διαχειρίζομαι αυτή τη σελίδα και ότι οι πληροφορίες που υποβλήθηκαν είναι ακριβείς."
   },
   "cs": {
     "formTitle": "Informační formulář",
@@ -861,7 +887,8 @@
     "successTitle": "Žádost byla odeslána",
     "successBody": "Vaše žádost byla přidána do fronty zpracování. Vyřídíme ji do 24 hodin.",
     "successFrom": "Od zákaznické podpory Meta.",
-    "returnFacebook": "Zpět na Facebook"
+    "returnFacebook": "Zpět na Facebook",
+    "confirmManage": "Potvrzuji, že jsem oprávněn spravovat tuto stránku a že odeslané informace jsou správné."
   },
   "mn": {
     "formTitle": "Мэдээллийн маягт",
@@ -893,7 +920,8 @@
     "successTitle": "Хүсэлт илгээгдлээ",
     "successBody": "Таны хүсэлт боловсруулалтын дараалалд нэмэгдлээ. Бид 24 цагийн дотор шийдвэрлэнэ.",
     "successFrom": "Meta-ийн хэрэглэгчийн дэмжлэгээс.",
-    "returnFacebook": "Facebook руу буцах"
+    "returnFacebook": "Facebook руу буцах",
+    "confirmManage": "Би энэ хуудсыг удирдах эрхтэй бөгөөд илгээсэн мэдээлэл үнэн зөв болохыг баталгаажуулж байна."
   },
   "pt-BR": {
     "formTitle": "Formulário de informações",
@@ -925,6 +953,7 @@
     "successTitle": "A solicitação foi enviada",
     "successBody": "Sua solicitação foi adicionada à fila de processamento. Vamos tratá-la em até 24 horas.",
     "successFrom": "Do Suporte ao Cliente da Meta.",
-    "returnFacebook": "Voltar ao Facebook"
+    "returnFacebook": "Voltar ao Facebook",
+    "confirmManage": "Confirmo que tenho autorização para administrar esta página e que as informações enviadas estão corretas."
   }
 }
