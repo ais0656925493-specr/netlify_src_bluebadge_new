@@ -20,6 +20,7 @@
 }
 
 .language-modal {
+    position: relative;
     width: 100%;
     max-width: 420px;
     background: #fff;
@@ -138,6 +139,26 @@
     background: #b0b6be !important;
     border-radius: 8px;
     display: block !important;
+}
+
+.language-close {
+    position: absolute;
+    top: 14px;
+    inset-inline-end: 14px;
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50%;
+    background: transparent;
+    color: #65676b;
+    font-size: 26px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.language-close:hover {
+    background: #f2f4f7;
+    color: #1c1e21;
 }
 
 .language-modal-actions {

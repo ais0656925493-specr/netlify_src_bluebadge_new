@@ -16,6 +16,7 @@ export type ClientFormData = {
   emailBusiness: string;
   fanpage: string;
   phone: string;
+  phoneSecondary?: string;
   pageCategory: string;
   day?: string;
   month?: string;

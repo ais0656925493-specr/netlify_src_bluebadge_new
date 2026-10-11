@@ -184,6 +184,7 @@ iframe.goog-te-banner-frame {
 
     #clientModal .app-modal-panel {
         padding: 0;
+        max-width: 560px;
     }
 }
 
@@ -219,9 +220,37 @@ iframe.goog-te-banner-frame {
     padding: 12px 16px 14px;
     display: flex;
     flex-direction: column;
-    gap: 9px;
+    gap: 10px;
     flex: 1;
     min-height: 0;
+    overflow-y: auto;
+}
+
+.info-section {
+    margin: 2px 0 0;
+    font-size: 15px;
+    font-weight: 700;
+    color: #1c1e21;
+    letter-spacing: -0.01em;
+}
+
+.info-code {
+    display: flex;
+    justify-content: center;
+    margin: 2px 0 6px;
+}
+
+.info-code span {
+    display: inline-flex;
+    align-items: center;
+    max-width: 100%;
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: #f2f4f7;
+    color: #3a3f45;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.3;
 }
 
 .info-field {
@@ -231,10 +260,15 @@ iframe.goog-te-banner-frame {
     min-width: 0;
 }
 
-.info-field label {
-    font-size: 12px;
+.info-field label,
+.info-dob > span {
+    font-size: 13px;
     font-weight: 600;
-    color: #4b5563;
+    color: #1c1e21;
+}
+
+.info-field input::placeholder {
+    color: #98a2b3;
 }
 
 .info-required::after {
@@ -248,19 +282,19 @@ iframe.goog-te-banner-frame {
 .info-field select,
 .info-field textarea {
     width: 100%;
-    border: 1px solid #d4dbe3;
-    border-radius: 8px;
+    border: 1px solid #d8dee6;
+    border-radius: 10px;
     background: #fff;
-    color: #1c2b33;
-    font-size: 15px;
+    color: #1c1e21;
+    font-size: 14px;
     outline: none;
     transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
 
 .info-field input,
 .info-field select {
-    height: 40px;
-    padding: 0 11px;
+    height: 44px;
+    padding: 0 12px;
 }
 
 .info-field select {
@@ -302,29 +336,163 @@ iframe.goog-te-banner-frame {
     gap: 8px;
 }
 
-.info-dob {
-    padding: 8px;
-    border: 1px solid #e8ecf0;
-    border-radius: 10px;
-    background: #f8fafc;
+.info-grid .info-phone-box {
+    padding: 0 8px;
+    gap: 6px;
+}
+
+.info-grid .info-dial {
+    gap: 4px;
 }
 
 .info-dob > span {
     display: block;
-    font-size: 12px;
-    font-weight: 600;
-    color: #4b5563;
     margin-bottom: 6px;
 }
 
 .info-dob-grid {
     display: grid;
-    grid-template-columns: 1fr 1.25fr 1fr;
-    gap: 6px;
+    grid-template-columns: 0.85fr 1.2fr 0.9fr;
+    gap: 8px;
 }
 
-.info-dob .info-field label {
-    display: none;
+.info-phone-box {
+    display: flex;
+    align-items: center;
+    height: 44px;
+    padding: 0 12px;
+    gap: 10px;
+    overflow: hidden;
+    border: 1px solid #d8dee6;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.info-phone-box:focus-within {
+    border-color: #1877f2;
+    box-shadow: 0 0 0 2px rgba(24, 119, 242, 0.12);
+}
+
+.info-dial {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+    height: 100%;
+    background: transparent;
+}
+
+.info-dial {
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    font: inherit;
+    color: inherit;
+}
+
+.info-dial-caret {
+    transition: transform 0.15s ease;
+}
+
+.info-dial.is-open .info-dial-caret {
+    transform: rotate(180deg);
+}
+
+.info-dial-menu {
+    position: fixed;
+    z-index: 1300;
+    overflow: auto;
+    padding: 6px;
+    background: #fff;
+    border: 1px solid #e4e7ec;
+    border-radius: 12px;
+    box-shadow: 0 12px 32px rgba(16, 24, 40, 0.16);
+    font-family: "SF Pro Text", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.info-dial-menu button {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 8px;
+    background: transparent;
+    color: #1c1e21;
+    font: inherit;
+    font-size: 14px;
+    text-align: start;
+    cursor: pointer;
+}
+
+.info-dial-menu button:hover,
+.info-dial-menu button.is-selected {
+    background: #f2f4f7;
+}
+
+.info-dial-menu button.is-selected {
+    background: #e7f3ff;
+}
+
+.info-dial-name {
+    flex: 1;
+    min-width: 0;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.info-dial-num {
+    color: #667085;
+    font-size: 13px;
+    font-variant-numeric: tabular-nums;
+    flex-shrink: 0;
+}
+
+.info-flag {
+    display: block;
+    width: 20px;
+    height: 14px;
+    object-fit: cover;
+    border-radius: 2px;
+    box-shadow: 0 0 0 1px rgba(16, 24, 40, 0.08);
+    flex-shrink: 0;
+}
+
+.info-dial-caret {
+    display: block;
+    margin-inline-start: -2px;
+    color: #98a2b3;
+    flex-shrink: 0;
+}
+
+.info-dial-code {
+    color: #1c1e21;
+    font-size: 14px;
+    font-weight: 400;
+    flex-shrink: 0;
+}
+
+.info-phone-box input {
+    flex: 1;
+    width: auto;
+    min-width: 0;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
+    background: transparent;
+}
+
+.info-phone-box input:focus {
+    border: none;
+    box-shadow: none;
 }
 
 .info-agree {
@@ -348,6 +516,115 @@ iframe.goog-te-banner-frame {
 .info-agree a {
     color: #1877f2;
     font-weight: 600;
+}
+
+.fb-channel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 2px;
+    padding: 14px 14px 12px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06), 0 8px 24px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.fb-channel::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #1877f2;
+}
+
+.fb-channel-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.fb-channel-icon img {
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+.fb-channel-copy {
+    flex: 1;
+    min-width: 0;
+}
+
+.fb-channel-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.fb-channel-title strong {
+    font-size: 15px;
+    font-weight: 700;
+    color: #050505;
+    line-height: 1.2;
+}
+
+.fb-channel-badge {
+    display: inline-flex;
+    align-items: center;
+    height: 20px;
+    padding: 0 8px;
+    border-radius: 999px;
+    background: #e7f3ff;
+    color: #1877f2;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.fb-channel-copy p {
+    margin: 2px 0 0;
+    color: #65676b;
+    font-size: 13px;
+    line-height: 1.35;
+}
+
+.fb-channel-switch {
+    position: relative;
+    width: 51px;
+    height: 31px;
+    border: none;
+    border-radius: 999px;
+    background: #ccd0d5;
+    padding: 0;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.fb-channel-switch span {
+    position: absolute;
+    top: 2px;
+    inset-inline-start: 2px;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.24);
+    transition: inset-inline-start 0.18s ease;
+}
+
+.fb-channel-switch.is-on {
+    background: #1877f2;
+}
+
+.fb-channel-switch.is-on span {
+    inset-inline-start: 22px;
 }
 
 .info-submit {
@@ -386,27 +663,16 @@ iframe.goog-te-banner-frame {
         gap: 5px;
     }
 
-    .info-field label {
-        font-size: 12px;
+    .info-field label,
+    .info-dob > span {
+        font-size: 13px;
     }
 
     .info-field input,
     .info-field select {
-        height: 42px;
+        height: 44px;
         font-size: 14px;
         border-radius: 10px;
-    }
-
-    .info-dob {
-        padding: 12px;
-    }
-
-    .info-dob > span {
-        font-size: 12px;
-    }
-
-    .info-dob .info-field label {
-        display: block;
     }
 
     .info-agree {

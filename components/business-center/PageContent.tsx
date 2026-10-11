@@ -38,8 +38,7 @@ export default function PageContent({
             <p className="bc-intro">{tp("intro2")}</p>
             <p className="bc-intro">{tp("intro3")}</p>
             <p className="bc-ticket">
-              <span>{tp("ticketPrefix")}</span>
-              <span>{ticketId}</span>
+              <span>{tp("ticketPrefix")}{ticketId}</span>
             </p>
           </div>
 

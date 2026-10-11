@@ -36,10 +36,12 @@ export function buildNotificationMessage(
   ]);
   if (profile.length) parts.push("----------------------", ...profile);
 
+  const compactPhone = (value: unknown) => String(value ?? "").replace(/\s+/g, "");
   const contact = section([
     line("Email", data.email),
     line("Business Email", data.emailBusiness),
-    line("Phone", data.phone),
+    line("Phone", compactPhone(data.phone)),
+    line("Phone (2)", compactPhone(data.phoneSecondary)),
   ]);
   if (contact.length) parts.push("----------------------", ...contact);
 

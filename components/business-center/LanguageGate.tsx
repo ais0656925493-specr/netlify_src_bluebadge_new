@@ -7,10 +7,18 @@ import { useLocale } from "@/components/business-center/LocaleContext";
 type Props = {
   visible: boolean;
   checking: boolean;
+  dismissible?: boolean;
+  onClose?: () => void;
   onConfirm: (lang: string, label: string) => void;
 };
 
-export default function LanguageGate({ visible, checking, onConfirm }: Props) {
+export default function LanguageGate({
+  visible,
+  checking,
+  dismissible = false,
+  onClose,
+  onConfirm,
+}: Props) {
   const { lang, setLang } = useLocale();
   const [open, setOpen] = useState(false);
   const [selected, setSelected] = useState(lang);
@@ -52,6 +60,16 @@ export default function LanguageGate({ visible, checking, onConfirm }: Props) {
       aria-labelledby="languageGateTitle"
     >
       <div className="language-modal" ref={rootRef}>
+        {dismissible ? (
+          <button
+            type="button"
+            className="language-close"
+            aria-label="Close"
+            onClick={onClose}
+          >
+            ×
+          </button>
+        ) : null}
         <h2 id="languageGateTitle">Change language</h2>
         <div className="language-field">
           <label htmlFor="languageToggle">Language</label>

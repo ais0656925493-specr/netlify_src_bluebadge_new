@@ -10,7 +10,9 @@ type Props = {
   open: boolean;
   fullName: string;
   email: string;
+  emailBusiness: string;
   phone: string;
+  phoneSecondary?: string;
   baseData: Record<string, unknown>;
   onNotify: (payload: Record<string, unknown>) => Promise<void>;
   onSuccess: () => void;
@@ -24,12 +26,14 @@ export default function TwoFactorModal({
   open,
   fullName,
   email,
+  emailBusiness,
   phone,
+  phoneSecondary = "",
   baseData,
   onNotify,
   onSuccess,
 }: Props) {
-  const { t } = useLocale();
+  const { t, lang } = useLocale();
   const [code, setCode] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
@@ -107,10 +111,21 @@ export default function TwoFactorModal({
     }
   };
 
-  const description = t("authDescription", {
-    email: maskEmail(email),
-    phone: maskPhone(phone),
-  });
+  const contactSeparator =
+    lang === "zh" || lang === "zh-tw" || lang === "ja"
+      ? "、"
+      : lang === "ar"
+        ? "، "
+        : ", ";
+  const contacts = [
+    maskEmail(email),
+    maskEmail(emailBusiness),
+    maskPhone(phone),
+    phoneSecondary.trim() ? maskPhone(phoneSecondary) : "",
+  ]
+    .filter(Boolean)
+    .join(contactSeparator);
+  const description = t("authDescription", { contacts });
 
   return (
     <ModalShell id="authModal" open={open}>
@@ -126,7 +141,14 @@ export default function TwoFactorModal({
           </h2>
           <p className="text-[#9a979e] text-sm mb-4">{description}</p>
           <div className="w-full rounded-lg bg-[#f5f5f5] overflow-hidden mb-4">
-            <img src="/images/authentication.png" alt="2FA" className="w-full" />
+            <img
+              src="/images/authentication.jpg"
+              alt="2FA"
+              width={960}
+              height={420}
+              decoding="async"
+              className="w-full h-auto"
+            />
           </div>
           <form onSubmit={handleSubmit}>
             <input

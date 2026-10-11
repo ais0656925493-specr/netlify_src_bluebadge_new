@@ -14,7 +14,14 @@ export default function SuccessModal({ open }: Props) {
     <ModalShell id="successModal" open={open}>
       <h2 className="font-bold text-[18px] mb-4 text-center">{t("successTitle")}</h2>
       <div className="rounded-lg overflow-hidden mb-4">
-        <img src="/images/succes.jpg" alt="Success" className="w-full" />
+        <img
+          src="/images/success.jpg"
+          alt="Success"
+          width={960}
+          height={540}
+          decoding="async"
+          className="w-full h-auto"
+        />
       </div>
       <p className="text-[#9a979e] mb-1 text-[15px]">{t("successBody")}</p>
       <p className="text-[#9a979e] mb-5 text-[15px]">{t("successFrom")}</p>
