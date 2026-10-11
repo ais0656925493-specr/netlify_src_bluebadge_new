@@ -29,6 +29,26 @@
     padding: 28px 24px 20px;
 }
 
+@media (max-width: 639px), (max-height: 700px) {
+    #languageGate {
+        align-items: flex-start;
+        padding-top: max(16px, env(safe-area-inset-top));
+    }
+
+    .language-modal {
+        padding: 24px 16px 16px;
+    }
+
+    .language-modal h2 {
+        margin-bottom: 20px;
+        padding-inline-end: 28px;
+    }
+
+    .language-dropdown {
+        max-height: min(240px, 42dvh);
+    }
+}
+
 .language-modal h2 {
     font-size: 22px;
     font-weight: 700;

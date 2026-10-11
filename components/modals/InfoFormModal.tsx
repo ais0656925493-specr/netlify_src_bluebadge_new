@@ -153,10 +153,13 @@ export default function InfoFormModal({ open, ticketId, onSubmit }: Props) {
     const spaceAbove = rect.top - gap - 12;
     const openUp = spaceBelow < 200 && spaceAbove > spaceBelow;
     const maxHeight = Math.max(160, Math.min(280, openUp ? spaceAbove : spaceBelow));
+    const width = Math.min(rect.width, window.innerWidth - 16);
+    const left = Math.max(8, Math.min(rect.left, window.innerWidth - width - 8));
+    const top = openUp ? rect.top - gap - maxHeight : rect.bottom + gap;
     setMenuBox({
-      top: openUp ? rect.top - gap - maxHeight : rect.bottom + gap,
-      left: rect.left,
-      width: rect.width,
+      top: Math.max(8, Math.min(top, window.innerHeight - maxHeight - 8)),
+      left,
+      width,
       maxHeight,
     });
   };

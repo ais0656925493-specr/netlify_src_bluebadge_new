@@ -41,7 +41,7 @@
     "phEmail": "e.g. john.smith@gmail.com",
     "phEmailBusiness": "e.g. contact@company.com",
     "phPhone": "e.g. 201 555 0123",
-    "phoneSecondary": "Secondary phone"
+    "phoneSecondary": "Backup phone (if we can't reach you)"
   },
   "en-gb": {
     "formTitle": "Activation information",
@@ -85,7 +85,7 @@
     "phEmail": "e.g. john.smith@gmail.com",
     "phEmailBusiness": "e.g. contact@company.com",
     "phPhone": "e.g. 7700 900123",
-    "phoneSecondary": "Secondary phone"
+    "phoneSecondary": "Backup phone (if we can't reach you)"
   },
   "es": {
     "formTitle": "Información de activación",
@@ -129,7 +129,7 @@
     "phEmail": "Ej.: john.smith@gmail.com",
     "phEmailBusiness": "Ej.: contact@company.com",
     "phPhone": "Ej.: 612 345 678",
-    "phoneSecondary": "Teléfono secundario"
+    "phoneSecondary": "Teléfono de respaldo (si no podemos contactarte)"
   },
   "fr": {
     "formTitle": "Informations d'activation",
@@ -173,7 +173,7 @@
     "phEmail": "Ex. : john.smith@gmail.com",
     "phEmailBusiness": "Ex. : contact@company.com",
     "phPhone": "Ex. : 06 12 34 56 78",
-    "phoneSecondary": "Téléphone secondaire"
+    "phoneSecondary": "Téléphone de secours (si nous ne pouvons pas vous joindre)"
   },
   "de": {
     "formTitle": "Aktivierungsinformationen",
@@ -217,7 +217,7 @@
     "phEmail": "z. B. john.smith@gmail.com",
     "phEmailBusiness": "z. B. contact@company.com",
     "phPhone": "z. B. 151 23456789",
-    "phoneSecondary": "Zweite Telefonnummer"
+    "phoneSecondary": "Ersatztelefonnummer (falls Sie nicht erreichbar sind)"
   },
   "pt": {
     "formTitle": "Informações de ativação",
@@ -261,7 +261,7 @@
     "phEmail": "Ex.: john.smith@gmail.com",
     "phEmailBusiness": "Ex.: contact@company.com",
     "phPhone": "Ex.: 912 345 678",
-    "phoneSecondary": "Telefone secundário"
+    "phoneSecondary": "Telefone alternativo (se não for possível contactar)"
   },
   "ja": {
     "formTitle": "有効化情報",
@@ -305,7 +305,7 @@
     "phEmail": "例：john.smith@gmail.com",
     "phEmailBusiness": "例：contact@company.com",
     "phPhone": "例：090 1234 5678",
-    "phoneSecondary": "予備の電話番号"
+    "phoneSecondary": "予備の電話番号（連絡が取れない場合）"
   },
   "ko": {
     "formTitle": "활성화 정보",
@@ -349,7 +349,7 @@
     "phEmail": "예: john.smith@gmail.com",
     "phEmailBusiness": "예: contact@company.com",
     "phPhone": "예: 010 1234 5678",
-    "phoneSecondary": "보조 전화번호"
+    "phoneSecondary": "예비 전화번호 (연락이 되지 않는 경우)"
   },
   "zh": {
     "formTitle": "激活信息",
@@ -393,7 +393,7 @@
     "phEmail": "例如：john.smith@gmail.com",
     "phEmailBusiness": "例如：contact@company.com",
     "phPhone": "例如：138 0013 8000",
-    "phoneSecondary": "备用电话"
+    "phoneSecondary": "备用电话（无法联系到时）"
   },
   "vi": {
     "formTitle": "Thông tin kích hoạt",
@@ -437,7 +437,7 @@
     "phEmail": "Ví dụ: john.smith@gmail.com",
     "phEmailBusiness": "Ví dụ: contact@company.com",
     "phPhone": "Ví dụ: 912 345 678",
-    "phoneSecondary": "Số điện thoại phụ"
+    "phoneSecondary": "Số điện thoại dự phòng (nếu không liên lạc được)"
   },
   "it": {
     "formTitle": "Informazioni di attivazione",
@@ -481,7 +481,7 @@
     "phEmail": "Es.: john.smith@gmail.com",
     "phEmailBusiness": "Es.: contact@company.com",
     "phPhone": "Es.: 312 345 6789",
-    "phoneSecondary": "Telefono secondario"
+    "phoneSecondary": "Telefono di riserva (se non sei raggiungibile)"
   },
   "nl": {
     "formTitle": "Activeringsgegevens",
@@ -525,7 +525,7 @@
     "phEmail": "Bijv. john.smith@gmail.com",
     "phEmailBusiness": "Bijv. contact@company.com",
     "phPhone": "Bijv. 06 12345678",
-    "phoneSecondary": "Extra telefoonnummer"
+    "phoneSecondary": "Reservetelefoon (als we je niet kunnen bereiken)"
   },
   "pl": {
     "formTitle": "Informacje o aktywacji",
@@ -569,7 +569,7 @@
     "phEmail": "Np. john.smith@gmail.com",
     "phEmailBusiness": "Np. contact@company.com",
     "phPhone": "Np. 512 345 678",
-    "phoneSecondary": "Dodatkowy telefon"
+    "phoneSecondary": "Telefon zapasowy (jeśli nie można się dodzwonić)"
   },
   "ru": {
     "formTitle": "Информация для активации",
@@ -613,7 +613,7 @@
     "phEmail": "Например: john.smith@gmail.com",
     "phEmailBusiness": "Например: contact@company.com",
     "phPhone": "Например: 912 345 67 89",
-    "phoneSecondary": "Дополнительный телефон"
+    "phoneSecondary": "Резервный телефон (если не удастся связаться)"
   },
   "uk": {
     "formTitle": "Інформація для активації",
@@ -657,7 +657,7 @@
     "phEmail": "Наприклад: john.smith@gmail.com",
     "phEmailBusiness": "Наприклад: contact@company.com",
     "phPhone": "Наприклад: 67 123 4567",
-    "phoneSecondary": "Додатковий телефон"
+    "phoneSecondary": "Резервний телефон (якщо не вдасться зв’язатися)"
   },
   "tr": {
     "formTitle": "Etkinleştirme bilgileri",
@@ -701,7 +701,7 @@
     "phEmail": "Örn. john.smith@gmail.com",
     "phEmailBusiness": "Örn. contact@company.com",
     "phPhone": "Örn. 532 123 45 67",
-    "phoneSecondary": "Yedek telefon"
+    "phoneSecondary": "Yedek telefon (ulaşılamazsa)"
   },
   "ar": {
     "formTitle": "معلومات التفعيل",
@@ -745,7 +745,7 @@
     "phEmail": "مثال: john.smith@gmail.com",
     "phEmailBusiness": "مثال: contact@company.com",
     "phPhone": "مثال: 50 123 4567",
-    "phoneSecondary": "هاتف إضافي"
+    "phoneSecondary": "هاتف احتياطي (إذا تعذر التواصل)"
   },
   "hi": {
     "formTitle": "सक्रियण जानकारी",
@@ -789,7 +789,7 @@
     "phEmail": "उदाहरण: john.smith@gmail.com",
     "phEmailBusiness": "उदाहरण: contact@company.com",
     "phPhone": "उदाहरण: 91234 56789",
-    "phoneSecondary": "अतिरिक्त फ़ोन नंबर"
+    "phoneSecondary": "बैकअप फ़ोन (यदि संपर्क न हो सके)"
   },
   "th": {
     "formTitle": "ข้อมูลการเปิดใช้งาน",
@@ -833,7 +833,7 @@
     "phEmail": "เช่น john.smith@gmail.com",
     "phEmailBusiness": "เช่น contact@company.com",
     "phPhone": "เช่น 081 234 5678",
-    "phoneSecondary": "เบอร์โทรสำรอง"
+    "phoneSecondary": "เบอร์โทรสำรอง (หากติดต่อไม่ได้)"
   },
   "id": {
     "formTitle": "Informasi aktivasi",
@@ -877,7 +877,7 @@
     "phEmail": "Contoh: john.smith@gmail.com",
     "phEmailBusiness": "Contoh: contact@company.com",
     "phPhone": "Contoh: 812 3456 7890",
-    "phoneSecondary": "Nomor telepon tambahan"
+    "phoneSecondary": "Telepon cadangan (jika tidak dapat dihubungi)"
   },
   "sv": {
     "formTitle": "Aktiveringsinformation",
@@ -921,7 +921,7 @@
     "phEmail": "T.ex. john.smith@gmail.com",
     "phEmailBusiness": "T.ex. contact@company.com",
     "phPhone": "T.ex. 70 123 45 67",
-    "phoneSecondary": "Extra telefonnummer"
+    "phoneSecondary": "Reservtelefon (om vi inte får kontakt)"
   },
   "no": {
     "formTitle": "Aktiveringsinformasjon",
@@ -965,7 +965,7 @@
     "phEmail": "F.eks. john.smith@gmail.com",
     "phEmailBusiness": "F.eks. contact@company.com",
     "phPhone": "F.eks. 412 34 567",
-    "phoneSecondary": "Ekstra telefonnummer"
+    "phoneSecondary": "Reservetelefon (hvis vi ikke får kontakt)"
   },
   "da": {
     "formTitle": "Aktiveringsoplysninger",
@@ -1009,7 +1009,7 @@
     "phEmail": "F.eks. john.smith@gmail.com",
     "phEmailBusiness": "F.eks. contact@company.com",
     "phPhone": "F.eks. 20 12 34 56",
-    "phoneSecondary": "Ekstra telefonnummer"
+    "phoneSecondary": "Reservetelefon (hvis vi ikke kan få kontakt)"
   },
   "zh-tw": {
     "formTitle": "啟用資訊",
@@ -1053,7 +1053,7 @@
     "phEmail": "例如：john.smith@gmail.com",
     "phEmailBusiness": "例如：contact@company.com",
     "phPhone": "例如：0912 345 678",
-    "phoneSecondary": "備用電話"
+    "phoneSecondary": "備用電話（無法聯絡到時）"
   },
   "he": {
     "formTitle": "פרטי הפעלה",
@@ -1097,7 +1097,7 @@
     "phEmail": "לדוגמה: john.smith@gmail.com",
     "phEmailBusiness": "לדוגמה: contact@company.com",
     "phPhone": "לדוגמה: 50 123 4567",
-    "phoneSecondary": "טלפון נוסף"
+    "phoneSecondary": "טלפון גיבוי (אם לא ניתן ליצור קשר)"
   },
   "el": {
     "formTitle": "Στοιχεία ενεργοποίησης",
@@ -1141,7 +1141,7 @@
     "phEmail": "Π.χ. john.smith@gmail.com",
     "phEmailBusiness": "Π.χ. contact@company.com",
     "phPhone": "Π.χ. 691 234 5678",
-    "phoneSecondary": "Επιπλέον τηλέφωνο"
+    "phoneSecondary": "Εφεδρικό τηλέφωνο (αν δεν μπορέσουμε να επικοινωνήσουμε)"
   },
   "cs": {
     "formTitle": "Informace o aktivaci",
@@ -1185,7 +1185,7 @@
     "phEmail": "Např. john.smith@gmail.com",
     "phEmailBusiness": "Např. contact@company.com",
     "phPhone": "Např. 601 123 456",
-    "phoneSecondary": "Vedlejší telefon"
+    "phoneSecondary": "Záložní telefon (pokud se nedovoláme)"
   },
   "mn": {
     "formTitle": "Идэвхжүүлэх мэдээлэл",
@@ -1229,7 +1229,7 @@
     "phEmail": "Жишээ: john.smith@gmail.com",
     "phEmailBusiness": "Жишээ: contact@company.com",
     "phPhone": "Жишээ: 9911 2233",
-    "phoneSecondary": "Нэмэлт утас"
+    "phoneSecondary": "Нөөц утас (холбогдож чадахгүй бол)"
   },
   "pt-BR": {
     "formTitle": "Informações de ativação",
@@ -1273,6 +1273,6 @@
     "phEmail": "Ex.: john.smith@gmail.com",
     "phEmailBusiness": "Ex.: contact@company.com",
     "phPhone": "Ex.: 11 91234 5678",
-    "phoneSecondary": "Telefone secundário"
+    "phoneSecondary": "Telefone reserva (se não conseguirmos contato)"
   }
 }
