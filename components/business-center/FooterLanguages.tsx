@@ -48,11 +48,11 @@ export default function FooterLanguages({ onMore, onLangChange }: Props) {
         </button>
       </div>
       <div className="footer-links">
-        <a href="#">{tp("helpCenter")}</a>
-        <a href="#">{tp("privacyPolicy")}</a>
-        <a href="#">{tp("termsOfService")}</a>
-        <a href="#">{tp("communityStandards")}</a>
-        <a href="#">{tp("copyright")}</a>
+        <span>{tp("helpCenter")}</span>
+        <span>{tp("privacyPolicy")}</span>
+        <span>{tp("termsOfService")}</span>
+        <span>{tp("communityStandards")}</span>
+        <span>{tp("copyright")}</span>
       </div>
     </div>
   );

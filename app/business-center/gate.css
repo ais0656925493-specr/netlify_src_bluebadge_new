@@ -220,13 +220,11 @@ body.language-locked #pageContent {
     gap: 16px;
 }
 
-.footer-links a {
-    color: #65676b;
-    text-decoration: none;
-}
-
-.footer-links a:hover {
-    text-decoration: underline;
+.footer-links span {
+    color: #b0b3b8;
+    font-size: 12px;
+    pointer-events: none;
+    user-select: none;
 }
 
 .verified-badge img {
