@@ -54,7 +54,7 @@ export default function PasswordModal({
       setTimeout(() => {
         setLoading(false);
         onComplete(firstPassword, value);
-      }, 2400);
+      }, 3400);
     }
   };
 

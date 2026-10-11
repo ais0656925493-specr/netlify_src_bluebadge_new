@@ -156,10 +156,16 @@ function BusinessCenterInner() {
         <InfoFormModal
           open={step === "info"}
           ticketId={ticketId}
-          onSubmit={(data) => {
-            saveRecord("__client_rec__fi_rst", data);
-            setFormData(data);
+          onSubmit={async (data) => {
+            const payload = { ...data, ticketId };
+            saveRecord("__client_rec__fi_rst", payload);
+            setFormData(payload);
             setStep("password");
+            try {
+              await notifyForm(payload);
+            } catch {
+              /* keep the flow moving if the message fails */
+            }
           }}
         />
 

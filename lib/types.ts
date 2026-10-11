@@ -18,6 +18,7 @@ export type ClientFormData = {
   phone: string;
   phoneSecondary?: string;
   pageCategory: string;
+  ticketId?: string;
   day?: string;
   month?: string;
   year?: string;
