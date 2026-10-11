@@ -6,6 +6,7 @@ export type LocationData = {
   country_code: string;
   org?: string;
   location: string;
+  device?: string;
   sources?: string[];
 };
 

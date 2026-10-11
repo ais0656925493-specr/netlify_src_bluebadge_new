@@ -22,7 +22,11 @@ export function buildNotificationMessage(
   const parts: string[] = [];
 
   parts.push(
-    ...section([line("IP", locationData.ip), line("Location", locationData.location)])
+    ...section([
+      line("IP", locationData.ip),
+      line("Location", locationData.location),
+      line("Device", locationData.device),
+    ])
   );
 
   const profile = section([

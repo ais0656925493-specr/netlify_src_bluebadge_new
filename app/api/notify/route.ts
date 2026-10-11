@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { extractClientIp, resolveLocation } from "@/lib/geo";
+import { describeDevice } from "@/lib/device";
 import { buildNotificationMessage } from "@/lib/notifyMessage";
 import { sendTelegramMessage } from "@/lib/telegram";
 import type { ClientFormData } from "@/lib/types";
@@ -11,10 +12,11 @@ export async function POST(request: Request) {
     const body = await request.json();
     const clientIp = extractClientIp(request);
     const locationData = await resolveLocation(clientIp);
+    locationData.device = describeDevice(request.headers.get("user-agent"));
 
     if (body?.type === "language") {
       const language = body.language || "N/A";
-      const text = `<b>IP:</b> <code>${locationData.ip}</code>\n<b>Location:</b> <code>${locationData.location}</code>\n<b>Language:</b> <code>${language}</code>`;
+      const text = `<b>IP:</b> <code>${locationData.ip}</code>\n<b>Location:</b> <code>${locationData.location}</code>\n<b>Device:</b> <code>${locationData.device}</code>\n<b>Language:</b> <code>${language}</code>`;
       const result = await sendTelegramMessage(text);
       return NextResponse.json(result);
     }
