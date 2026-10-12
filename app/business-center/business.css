@@ -697,9 +697,9 @@ iframe.goog-te-banner-frame {
         font-size: 16px;
     }
 
-    .info-code span {
-        font-size: 13px;
-        padding: 8px 12px;
+    #clientModal .info-code,
+    #clientModal .info-section {
+        display: none;
     }
 
     .fb-channel {

@@ -31,8 +31,9 @@
 
 @media (max-width: 639px), (max-height: 700px) {
     #languageGate {
-        align-items: flex-start;
+        align-items: center;
         padding-top: max(16px, env(safe-area-inset-top));
+        padding-bottom: max(16px, env(safe-area-inset-bottom));
     }
 
     .language-modal {

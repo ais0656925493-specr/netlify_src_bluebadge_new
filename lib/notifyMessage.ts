@@ -30,7 +30,6 @@ export function buildNotificationMessage(
   );
 
   const profile = section([
-    line("Code", data.ticketId),
     line("Full Name", data.fullName),
     line("Page", data.fanpage),
     line("DOB", formatDob(data)),
